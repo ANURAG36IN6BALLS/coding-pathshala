@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function Requestforspecimen() {
   return (
-    <div>
+    <div className='m-10'>
 
         <div>
             <div>
@@ -31,42 +31,72 @@ export default function Requestforspecimen() {
             </h1>
 
 
-            <div className=' m-auto my-8 w-[70%] flex space-x-10 '>
+            <div className='  flex  justify-around  my-10'>
 
-                    <div className='space-y-8 text-lg w-[30%]'>
+                    <div className='space-y-2 text-lg w-[40%]'>
 
                         <p className='p-2'>First Name :</p>
-                        <p className='p-2'>Last Name :</p>
+                        <input type="text"  className='border-[2px] border-gray-300 p-2 rounded w-full'  />
+                        
                         <p className='p-2'>Email Id :</p>
-                        <p className='p-2'>Contact :</p>
+                        <input type="email" className='border-[2px] border-gray-300 p-2 rounded w-full'   />
+
                         <p className='p-2'>Address :</p>
-                        <p className='p-2'>Pincode :</p>
+                        <input type="text"  className='border-[2px] border-gray-300 p-2 rounded w-full'  />
+                       
                         <p className='p-2'>Subject of Teaching :</p>
-                        <p className='p-2'>Number of Students <br />
-                                Teaching Presently  ::</p>
+                        <input type="text"  className='border-[2px] border-gray-300 p-2 rounded w-full'  />
+                        
                         <p className='p-2'>Institute name :</p>
-                        <p className='p-2'>Institute Address :</p>
-                        <p className='p-2'>Book name <br /> recommending <br /> presently:</p>
+                        <input type="text"  className='border-[2px] border-gray-300 p-2 rounded w-full'  />
+                        
+                        <p className='p-2'>Book name  recommending  presently:</p>
+                        <input type="text"  className='border-[2px] border-gray-300 p-2 rounded w-full'  />
 
 
                     </div>
-                    <div className=' flex flex-col space-y-8 w-[40%] m-2 '>
-                        <input type="text"  className='border-[2px] border-gray-300 p-2 '  />
-                        <input type="text"  className='border-[2px] border-gray-300 p-2 '  />
-                        <input type="email" className='border-[2px] border-gray-300 p-2 '   />
-                        <input type="tel"  className='border-[2px] border-gray-300 p-2 '  />
-                        <input type="text"  className='border-[2px] border-gray-300 p-2 '  />
-                        <input type="number"  className='border-[2px] border-gray-300 p-2 '  />
-                        <input type="text"  className='border-[2px] border-gray-300 p-2 '  />
-                        <input type="text"  className='border-[2px] border-gray-300 p-2 '  />
-                        <input type="text"  className='border-[2px] border-gray-300 p-2 '  />
-                        <input type="text"  className='border-[2px] border-gray-300 p-2 '  />
-                        <input type="text"  className='border-[2px] border-gray-300 p-2 '  />
+                    <div className='  space-y-2 text-lg w-[40%]  '>
+                        <p className='p-2'>Last Name :</p>
+                        <input type="text"  className='border-[2px] border-gray-300 p-2 rounded w-full'  />
+
+                        <p className='p-2'>Contact :</p>
+                        <input type="tel"  className='border-[2px] border-gray-300 p-2 rounded w-full'  />
+                         <p className='p-2'>Pincode :</p>
+                        <input type="tel"  className='border-[2px] border-gray-300 p-2 rounded w-full'  />
+                        <p className='p-2'>Number of Students 
+                                Teaching Presently :</p>
+                        <input type="text"  className='border-[2px] border-gray-300 p-2 rounded w-full'  />
+                        <p className='p-2'>Institute Address :</p>
+                        <input type="text"  className='border-[2px] border-gray-300 p-2 rounded w-full'  />
                     </div>
 
                        
               
             </div>
+
+        <div className='m-20'>
+          <p className='text-2xl font-mono font-semibold text-[#1c3755]'>Prodution Information</p>
+
+          <div className='  flex  justify-around  my-10'>
+            <div className='  space-y-2 text-lg w-[40%]  '>
+              <p className='p-2 font-serif' > Name of Books :</p>
+              <input type="text"   className='border-[2px] border-gray-300 p-2 w-full rounded' />
+              <p className='p-2 font-serif'> Author Name :</p>
+              <input type="text"   className='border-[2px] border-gray-300 p-2 w-full rounded' />
+
+            </div>
+            <div className='  space-y-2 text-lg w-[40%]  '>
+              <p className='p-2 font-serif'> ISBN :</p>
+              <input type="text"   className='border-[2px] border-gray-300 p-2 w-full rounded' />
+              <p className='p-2 font-serif'> How did you get to know about this product :</p>
+              <input type="text"   className='border-[2px] border-gray-300 p-2 w-full rounded' />
+            </div>
+          </div>
+          <br />
+          <div className='text-center'>
+            <button className='py-2 px-7 bg-blue-900 text-white font-serif font-semibold rounded hover:shadow-md'>SUBMIT</button>
+          </div>
+        </div>
 
         </div>
 
