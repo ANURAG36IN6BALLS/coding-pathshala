@@ -7,9 +7,9 @@ export default function Connectus() {
       <div className="bg-[#ede0d4] pb-20 py-10 py ">
         <div>
           <Link to={"/"} className="hover:underline px-5 text-white font-bold">
-            Home &nbsp;
+            Home
           </Link>
-          <span>&#62;</span>
+          <span> &#62;</span>
 
           <span className="px-5">Connect Us</span>
         </div>

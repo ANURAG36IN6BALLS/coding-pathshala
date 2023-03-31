@@ -102,7 +102,9 @@ export default function Footer() {
           </div>
 
           <div className="flex space-x-8 mt-8  ">
-            <FaFacebookF className="bg-blue-400 h-8 w-8 p-1" />
+            <a href="http://www.facebook.com">
+              <FaFacebookF className="bg-blue-400 h-8 w-8 p-1" />
+            </a>
             <GrLinkedinOption className="bg-blue-600 h-8 w-8 p-1" />
             <FaInstagram className="bg-pink-400 h-8 w-8 p-1" />
             <FaYoutubeSquare className="bg-red-600 h-8 w-8 p-1" />
