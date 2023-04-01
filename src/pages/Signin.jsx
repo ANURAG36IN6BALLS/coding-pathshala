@@ -1,10 +1,6 @@
 import React, { useState } from "react";
-import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 import { FcGoogle } from "react-icons/fc";
-import { AiOutlineLogin } from "react-icons/ai";
-import { RxCross2 } from "react-icons/rx";
 import { Link } from "react-router-dom";
-import { FaFacebookF } from "react-icons/fa";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
@@ -61,112 +57,103 @@ export default function Signin() {
   }
 
   return (
-    <div className="w-[40%] m-auto my-32">
-      <div className="flex items-center justify-between bg-black text-white font-bold p-3 text-2xl">
-        <div className="flex items-center space-x-2">
-          <AiOutlineLogin />
-          <h1>Sign In</h1>
-        </div>
-        <RxCross2 />
+    <>
+      <div className="flex flex-col justify-center items-center space-y-9">
+        <h1 className="text-3xl font-semibold  mt-6">Customer Login</h1>
+
+        <button
+          className="flex relative  text-black font-bold text-[15px] py-1 px-4 rounded m-[10px] shadow-md"
+          onClick={Authentication}
+        >
+          <FcGoogle className="h-5 w-5 mr-[8px] " />
+          SIGN IN WITH GOOGLE
+        </button>
       </div>
-      <div>
-        <form onSubmit={onSubmit}>
-          <div className="flex justify-between">
-            <p className="my-4 border-b border-gray-300 pb-3 text-lg">
-              Registered Customers
-            </p>
-            <p className="my-4 border-b border-gray-300 pb-3 text-lg">
-              Or Sign In With
-            </p>
-          </div>
 
-          <div className="flex justify-between">
-            <p className="text-lg">
-              Email<span className="text-red-700">*</span>
-            </p>
-            <button
-              onClick={Authentication}
-              className=" p-2 rounded flex items-center"
-            >
-              <FcGoogle className="cursor-pointer h-6 w-6 mr-3 text-lg" />
-              SIGN IN WITH GOOGLE
-            </button>
-          </div>
-
+      <div className="flex justify-around my-20">
+        <form
+          onSubmit={onSubmit}
+          className=" border-2 border-gray-200 shadow-md w-[30%] p-2"
+        >
+          <h1 className="font-semibold text-3xl ">Registerd Customers</h1>
+          <p className="text-gray-400 text-sm py-2">
+            If You Have An Account, Signin With Email Address
+          </p>
+          <p>
+            Email
+            <span className="text-red-600">*</span>
+          </p>
           <input
             type="email"
+            className="border-2 border-gray-100 w-full h-10 my-2"
             onChange={(e) => setEmail(e.target.value)}
-            className="border-gray-100 border-2 w-full my-2 py-3"
           />
-
+          <p>
+            Password
+            <span className="text-red-600">*</span>
+          </p>
+          <input
+            type="password"
+            className="border-2 border-gray-100 w-full h-10 my-2"
+            onChange={(e) => setPassword(e.target.value)}
+          />
           <div>
-            <p className="text-lg">
-              Password<span className="text-red-700">*</span>
-            </p>
-            <input
-              type={showPassword ? "text" : "password"}
-              onChange={(e) => setPassword(e.target.value)}
-              className="border-gray-100 border-2 w-full my-2 py-3"
-            />
-            {showPassword ? (
-              <AiFillEye
-                className=" cursor-pointer absolute right-4 top-[18px] text-[18px]"
-                onClick={() => setShowPassword(false)}
-              />
-            ) : (
-              <AiFillEyeInvisible
-                className="cursor-pointer absolute right-4 top-[18px] text-[18px]"
-                onClick={() => setShowPassword(true)}
-              />
-            )}
+            <input type="checkbox" /> showpassword
           </div>
 
-          <p className="text-lg">
+          <p className="text-gray-400 text-sm py-2">
+            {" "}
             Please type the letters and numbers below{" "}
-            <span className="text-red-700">*</span>
+            <span className="text-red-600">*</span>
           </p>
           <input
             type="text"
-            className="border-gray-100 w-full border-2 my-2 py-3"
+            className="border-2 border-gray-100 w-full h-10 my-2"
           />
 
-          <div className=" flex w-full h-10 my-2 ">
+          <div className="flex w-full h-10 ">
             <div className="w-[50%]">IMAGE</div>
-            <button className=" bg-blue-200 w-[50%] font-semibold rounded">
+            <button className="bg-yellow-300 w-[50%] font-semibold text-sm rounded">
               RELOAD CAPTCHA
             </button>
           </div>
-          <p className="text-gray-500 my-2">
-            {" "}
-            * Attention:Captcha is case sensitive.
+          <p className="font-semibold text-sm my-2">
+            ^ Attention:{" "}
+            <span className="text-gray-400 text-sm py-2">
+              Captcha is case sensitive .
+            </span>{" "}
+          </p>
+
+          <div className="float-right text-gray-800 my-4 ">
+            <Link to={"/Forgotpassword"}> forgot your password ?</Link>
+          </div>
+
+          <button
+            className="bg-yellow-300 w-full h-10 my-2 font-semibold rounded"
+            onClick={onSubmit}
+          >
+            SignIn
+          </button>
+          <p className="text-red-600 text-[10px]">
+            <span>*</span> Required fields
           </p>
         </form>
 
-        <div className="space-x-6">
-          <button
-            className="text-white bg-black w-36 py-2 font-semibold rounded text-lg"
-            onClick={onSubmit}
-          >
-            Login
-          </button>
-          <Link to={"/Forgotpassword"}>
-            <button className=" bg-blue-200 w-[50%] font-semibold rounded py-2 text-lg">
-              Forgot Your Password?
-            </button>
-          </Link>
-        </div>
+        <div className="w-[40%]">
+          <h1 className="font-semibold text-2xl">New Customers</h1>
+          <p className="text-gray-400 text-sm py-2">
+            Creating an account haws many benifits:check out faster,keep more
+            <br />
+            than one address , track orders and more
+          </p>
 
-        <div className="my-5">
-          <Link
-            to={"/signup"}
-            className="border bg-blue-200 rounded font-semibold p-2 text-lg"
-          >
-            Create New Account?
-          </Link>
+          <div className="w-full my-3">
+            <button className="bg-yellow-300 w-[40%] py-3 font-semibold rounded">
+              <Link to={"/Signup"}> CREATE AN ACCOUNT</Link>
+            </button>
+          </div>
         </div>
       </div>
-
-      <div></div>
-    </div>
+    </>
   );
 }

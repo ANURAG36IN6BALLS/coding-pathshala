@@ -6,13 +6,35 @@ import { FiUsers } from "react-icons/fi";
 import { FiHeart } from "react-icons/fi";
 import { BsHandbag } from "react-icons/bs";
 import { IoIosArrowDown } from "react-icons/io";
-import { useLocation, useNavigate } from "react-router";
 import { Link } from "react-router-dom";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { useEffect } from "react";
+import { useState } from "react";
+import { useLocation, useNavigate } from "react-router";
 
 export default function Header() {
+  const auth = getAuth();
+
   const location = useLocation();
   const navigate = useNavigate();
+  const [title, settitle] = useState("SignIn");
 
+  useEffect(() => {
+    const auth = getAuth();
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        settitle("Profile");
+      } else {
+        settitle("SignIn");
+      }
+    });
+  }, [auth]);
+
+  function matchroute(route) {
+    if (route === location.pathname) {
+      return true;
+    }
+  }
   return (
     <>
       <div className="font-sans">
@@ -21,10 +43,13 @@ export default function Header() {
             <div>
               <ul className="flex space-x-4 mr-[130px] cursor-pointer">
                 <li
-                  className={`text-white font-semibold text-[15px] `}
-                  onClick={() => navigate("/MyAccount")}
+                  className={`text-white font-semibold text-[15px] ${
+                    matchroute("/MyAccount") ||
+                    (matchroute("/Profile") && " text-white border-b-red-600")
+                  } `}
+                  onClick={() => navigate("/Profile")}
                 >
-                  My Account
+                  {title}
                 </li>
                 <li className={`bg-white w-[0.1px] h-3 mt-[6px]`}></li>
                 <li
@@ -45,7 +70,7 @@ export default function Header() {
             </div>
           </div>
 
-          <div className="flex  mt-4 text-sm">
+          <div className="flex items-center mt-4 text-sm justify-center md:flex-wrap ">
             <div>
               <img
                 src={logo}
@@ -60,9 +85,9 @@ export default function Header() {
                 <input
                   type="search"
                   placeholder="Search entire store here...."
-                  className="border-[2px] border-black w-[500px] h-[55px] rounded ml-48 pl-4"
+                  className="border-[2px] border-black w-[50%] h-[5%] rounded ml- pl-4"
                 />
-                <select className="w-[170px] absolute right-[60px] outline-none rounded  bg-gray-200 py-[12px] px-2">
+                <select className=" hidden w-[170px] absolute right-[60px] outline-none rounded  bg-gray-200 py-[12px] px-2">
                   <option value="All">All Categories</option>
                   <option value="5">AIR FORCE </option>
                   <option value="21">ARITHMETIC/MATHS </option>
@@ -368,19 +393,19 @@ export default function Header() {
                     विद्यालय/मिलिटरी स्कूल{" "}
                   </option>
                 </select>
-                <GoSearch className=" h-[55px] w-[60px] bg-blue-300 p-[13px] rounded absolute right-0" />
+                <GoSearch className=" md:hidden h-[10%] w-[20%] bg-blue-300 p-[13px] rounded absolute right-0" />
               </div>
 
               <div className="flex items-center">
-                <FiUsers className="h-[30px] w-[40px]" />
+                {/* <FiUsers className="h-[30px] w-[40px]" /> */}
 
                 <div className="text-md">
-                  <p>
+                  {/* <p>
                     <Link to={"/Signin"}> Sign In</Link>{" "}
                   </p>
                   <p>
                     <Link to={"/Signup"}>Create an Account</Link>{" "}
-                  </p>
+                  </p> */}
                 </div>
               </div>
 
@@ -392,7 +417,7 @@ export default function Header() {
                     <p>
                       <span className="text-sm font-mono">Favorite</span>
                       <br />
-                      My Wish List
+                      {/* My Wish List */}
                     </p>
                   </Link>
                 </div>
@@ -405,7 +430,7 @@ export default function Header() {
                     <p>
                       <span>My Cart</span>
                       <br />
-                      <span>₹0.00</span>
+                      {/* <span>₹0.00</span> */}
                     </p>
                   </Link>
                 </div>

@@ -55,7 +55,7 @@ export default function Footer() {
               <Link to={"/MyAccount"}>Sign In</Link>
             </p>
             <p>
-              <Link to={"Viewcart"}>View Cart</Link>
+              <Link to={"/mycart"}>View Cart</Link>
             </p>
             <p>
               <Link to={"Contactus"}>Contact</Link>

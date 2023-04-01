@@ -44,7 +44,7 @@ export default function Signup() {
       };
 
       await setDoc(doc(db, "users", user.uid), userDetails);
-      toast.success("welcome to realtor world");
+      toast.success("Welcome to Coding-Pathshala");
       navigate("/");
     } catch (errors) {
       console.log(errors);
