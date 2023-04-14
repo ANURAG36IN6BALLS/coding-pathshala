@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 export default function () {
   return (
-    <div>
-      <div className="ml-20 mt-14 text-md">
+    <div className="m-10">
+      <div className="hidden lg:block ml-20 mt-14 text-md">
         <Link to={"/home"} className="hover:underline text-gray-600">
           Home
         </Link>
@@ -16,8 +16,8 @@ export default function () {
         <span> Books </span>
       </div>
 
-      <div className="w-[75%] m-auto border-2 border-gray-600 my-10 ">
-        <div className="flex justify-between items-center  w-full  px-5">
+      <div className=" lg:w-[65%] m-auto border-2 space-x-4 border-gray-600 my-10 pb-4 ">
+        <div className="lg:flex justify-between items-center hidden  w-full  px-5">
           <p>Items 1-12 of 225</p>
           <div className="flex space-x-3 items-center">
             <p className="font-medium text-gray-700 text-lg">Sort By</p>
@@ -30,9 +30,9 @@ export default function () {
           </div>
         </div>
 
-        <hr className="h-[2px] bg-gray-700" />
-        <div className="flex flex-wrap">
-          <div className="border-2 border-gray-700 w-[25%] space-y-7 pb-[20px] ">
+        {/* <hr className=" hidden lg:block h-[2px] bg-gray-700" /> */}
+        <div className="flex  flex-wrap ">
+          <div className="  border-2 border-gray-700  ">
             <div className=" bg-blue-400  m-4">
               <img
                 src="book1.jpg"
@@ -40,21 +40,23 @@ export default function () {
                 className="w-[150px] h-[200px] py-2 px-3 m-auto"
               />
             </div>
-            <p className="text-center font-semibold ">
+            <p className="text-center font-semibold md:text-inherit xm:text-[14px]  ">
               Samanya Vigyan for <br /> Bhartiya Railways RRB <br /> Pariksha -
               JE/NTPC/ALP/
-              <br /> Group D - 2nd Edition{" "}
+              <br /> Group D - 2nd Edition
             </p>
-            <button className="text-lg font-bold text-center bg-yellow-300 p-4 ml-12 rounded-md ">
-              ADD TO CART
-            </button>
-            <br />
-            <button className="text-lg font-bold text-center p-4 ml-12 rounded-md border border-gray-300">
-              QUICK VIEW
-            </button>
+            <div className="w-[40%] m-auto space-y-4">
+              <button className="text-[10px] font-bold text-center bg-yellow-300 px-2  rounded-md   ">
+                ADD TO CART
+              </button>
+              <br />
+              <button className="text-[10px] font-bold text-center p-2  rounded-md border border-gray-300  ">
+                QUICK VIEW
+              </button>
+            </div>
           </div>
 
-          <div className="border-2 border-gray-700 w-[25%] space-y-7 pb-[20px] ">
+          <div className="  border-2 border-gray-700  ">
             <div className=" bg-blue-400  m-4">
               <img
                 src="book1.jpg"
@@ -62,21 +64,23 @@ export default function () {
                 className="w-[150px] h-[200px] py-2 px-3 m-auto"
               />
             </div>
-            <p className="text-center font-semibold ">
+            <p className="text-center font-semibold md:text-inherit xm:text-[14px]  ">
               Samanya Vigyan for <br /> Bhartiya Railways RRB <br /> Pariksha -
               JE/NTPC/ALP/
-              <br /> Group D - 2nd Edition{" "}
+              <br /> Group D - 2nd Edition
             </p>
-            <button className="text-lg font-bold text-center bg-yellow-300 p-4 ml-12 rounded-md ">
-              ADD TO CART
-            </button>
-            <br />
-            <button className="text-lg font-bold text-center p-4 ml-12 rounded-md border border-gray-300">
-              QUICK VIEW
-            </button>
+            <div className="w-[40%] m-auto space-y-4">
+              <button className="text-[10px] font-bold text-center bg-yellow-300 px-2  rounded-md   ">
+                ADD TO CART
+              </button>
+              <br />
+              <button className="text-[10px] font-bold text-center p-2  rounded-md border border-gray-300  ">
+                QUICK VIEW
+              </button>
+            </div>
           </div>
 
-          <div className="border-2 border-gray-700 w-[25%] space-y-7 pb-[20px] ">
+          <div className="  border-2 border-gray-700  ">
             <div className=" bg-blue-400  m-4">
               <img
                 src="book1.jpg"
@@ -84,21 +88,22 @@ export default function () {
                 className="w-[150px] h-[200px] py-2 px-3 m-auto"
               />
             </div>
-            <p className="text-center font-semibold ">
+            <p className="text-center font-semibold md:text-inherit xm:text-[14px]  ">
               Samanya Vigyan for <br /> Bhartiya Railways RRB <br /> Pariksha -
               JE/NTPC/ALP/
-              <br /> Group D - 2nd Edition{" "}
+              <br /> Group D - 2nd Edition
             </p>
-            <button className="text-lg font-bold text-center bg-yellow-300 p-4 ml-12 rounded-md ">
-              ADD TO CART
-            </button>
-            <br />
-            <button className="text-lg font-bold text-center p-4 ml-12 rounded-md border border-gray-300">
-              QUICK VIEW
-            </button>
+            <div className="w-[40%] m-auto space-y-4">
+              <button className="text-[10px] font-bold text-center bg-yellow-300 px-2  rounded-md   ">
+                ADD TO CART
+              </button>
+              <br />
+              <button className="text-[10px] font-bold text-center p-2  rounded-md border border-gray-300  ">
+                QUICK VIEW
+              </button>
+            </div>
           </div>
-
-          <div className="border-2 border-gray-700 w-[25%] space-y-7 pb-[20px] ">
+          <div className="  border-2 border-gray-700  ">
             <div className=" bg-blue-400  m-4">
               <img
                 src="book1.jpg"
@@ -106,193 +111,20 @@ export default function () {
                 className="w-[150px] h-[200px] py-2 px-3 m-auto"
               />
             </div>
-            <p className="text-center font-semibold ">
+            <p className="text-center font-semibold md:text-inherit xm:text-[14px]  ">
               Samanya Vigyan for <br /> Bhartiya Railways RRB <br /> Pariksha -
               JE/NTPC/ALP/
-              <br /> Group D - 2nd Edition{" "}
+              <br /> Group D - 2nd Edition
             </p>
-            <button className="text-lg font-bold text-center bg-yellow-300 p-4 ml-12 rounded-md ">
-              ADD TO CART
-            </button>
-            <br />
-            <button className="text-lg font-bold text-center p-4 ml-12 rounded-md border border-gray-300">
-              QUICK VIEW
-            </button>
-          </div>
-
-          <div className="border-2 border-gray-700 w-[25%] space-y-7 pb-[20px] ">
-            <div className=" bg-blue-400  m-4">
-              <img
-                src="book1.jpg"
-                alt=""
-                className="w-[150px] h-[200px] py-2 px-3 m-auto"
-              />
+            <div className="w-[40%] m-auto space-y-4">
+              <button className="text-[10px] font-bold text-center bg-yellow-300 px-2  rounded-md   ">
+                ADD TO CART
+              </button>
+              <br />
+              <button className="text-[10px] font-bold text-center p-2  rounded-md border border-gray-300  ">
+                QUICK VIEW
+              </button>
             </div>
-            <p className="text-center font-semibold ">
-              Samanya Vigyan for <br /> Bhartiya Railways RRB <br /> Pariksha -
-              JE/NTPC/ALP/
-              <br /> Group D - 2nd Edition{" "}
-            </p>
-            <button className="text-lg font-bold text-center bg-yellow-300 p-4 ml-12 rounded-md ">
-              ADD TO CART
-            </button>
-            <br />
-            <button className="text-lg font-bold text-center p-4 ml-12 rounded-md border border-gray-300">
-              QUICK VIEW
-            </button>
-          </div>
-
-          <div className="border-2 border-gray-700 w-[25%] space-y-7 pb-[20px] ">
-            <div className=" bg-blue-400  m-4">
-              <img
-                src="book1.jpg"
-                alt=""
-                className="w-[150px] h-[200px] py-2 px-3 m-auto"
-              />
-            </div>
-            <p className="text-center font-semibold ">
-              Samanya Vigyan for <br /> Bhartiya Railways RRB <br /> Pariksha -
-              JE/NTPC/ALP/
-              <br /> Group D - 2nd Edition{" "}
-            </p>
-            <button className="text-lg font-bold text-center bg-yellow-300 p-4 ml-12 rounded-md ">
-              ADD TO CART
-            </button>
-            <br />
-            <button className="text-lg font-bold text-center p-4 ml-12 rounded-md border border-gray-300">
-              QUICK VIEW
-            </button>
-          </div>
-
-          <div className="border-2 border-gray-700 w-[25%] space-y-7 pb-[20px] ">
-            <div className=" bg-blue-400  m-4">
-              <img
-                src="book1.jpg"
-                alt=""
-                className="w-[150px] h-[200px] py-2 px-3 m-auto"
-              />
-            </div>
-            <p className="text-center font-semibold ">
-              Samanya Vigyan for <br /> Bhartiya Railways RRB <br /> Pariksha -
-              JE/NTPC/ALP/
-              <br /> Group D - 2nd Edition{" "}
-            </p>
-            <button className="text-lg font-bold text-center bg-yellow-300 p-4 ml-12 rounded-md ">
-              ADD TO CART
-            </button>
-            <br />
-            <button className="text-lg font-bold text-center p-4 ml-12 rounded-md border border-gray-300">
-              QUICK VIEW
-            </button>
-          </div>
-
-          <div className="border-2 border-gray-700 w-[25%] space-y-7 pb-[20px] ">
-            <div className=" bg-blue-400  m-4">
-              <img
-                src="book1.jpg"
-                alt=""
-                className="w-[150px] h-[200px] py-2 px-3 m-auto"
-              />
-            </div>
-            <p className="text-center font-semibold ">
-              Samanya Vigyan for <br /> Bhartiya Railways RRB <br /> Pariksha -
-              JE/NTPC/ALP/
-              <br /> Group D - 2nd Edition{" "}
-            </p>
-            <button className="text-lg font-bold text-center bg-yellow-300 p-4 ml-12 rounded-md ">
-              ADD TO CART
-            </button>
-            <br />
-            <button className="text-lg font-bold text-center p-4 ml-12 rounded-md border border-gray-300">
-              QUICK VIEW
-            </button>
-          </div>
-
-          <div className="border-2 border-gray-700 w-[25%] space-y-7 pb-[20px] ">
-            <div className=" bg-blue-400  m-4">
-              <img
-                src="book1.jpg"
-                alt=""
-                className="w-[150px] h-[200px] py-2 px-3 m-auto"
-              />
-            </div>
-            <p className="text-center font-semibold ">
-              Samanya Vigyan for <br /> Bhartiya Railways RRB <br /> Pariksha -
-              JE/NTPC/ALP/
-              <br /> Group D - 2nd Edition{" "}
-            </p>
-            <button className="text-lg font-bold text-center bg-yellow-300 p-4 ml-12 rounded-md ">
-              ADD TO CART
-            </button>
-            <br />
-            <button className="text-lg font-bold text-center p-4 ml-12 rounded-md border border-gray-300">
-              QUICK VIEW
-            </button>
-          </div>
-          <div className="border-2 border-gray-700 w-[25%] space-y-7 pb-[20px] ">
-            <div className=" bg-blue-400  m-4">
-              <img
-                src="book1.jpg"
-                alt=""
-                className="w-[150px] h-[200px] py-2 px-3 m-auto"
-              />
-            </div>
-            <p className="text-center font-semibold ">
-              Samanya Vigyan for <br /> Bhartiya Railways RRB <br /> Pariksha -
-              JE/NTPC/ALP/
-              <br /> Group D - 2nd Edition{" "}
-            </p>
-            <button className="text-lg font-bold text-center bg-yellow-300 p-4 ml-12 rounded-md ">
-              ADD TO CART
-            </button>
-            <br />
-            <button className="text-lg font-bold text-center p-4 ml-12 rounded-md border border-gray-300">
-              QUICK VIEW
-            </button>
-          </div>
-
-          <div className="border-2 border-gray-700 w-[25%] space-y-7 pb-[20px] ">
-            <div className=" bg-blue-400  m-4">
-              <img
-                src="book1.jpg"
-                alt=""
-                className="w-[150px] h-[200px] py-2 px-3 m-auto"
-              />
-            </div>
-            <p className="text-center font-semibold ">
-              Samanya Vigyan for <br /> Bhartiya Railways RRB <br /> Pariksha -
-              JE/NTPC/ALP/
-              <br /> Group D - 2nd Edition{" "}
-            </p>
-            <button className="text-lg font-bold text-center bg-yellow-300 p-4 ml-12 rounded-md ">
-              ADD TO CART
-            </button>
-            <br />
-            <button className="text-lg font-bold text-center p-4 ml-12 rounded-md border border-gray-300">
-              QUICK VIEW
-            </button>
-          </div>
-
-          <div className="border-2 border-gray-700 w-[25%] space-y-7 pb-[20px] ">
-            <div className=" bg-blue-400  m-4">
-              <img
-                src="book1.jpg"
-                alt=""
-                className="w-[150px] h-[200px] py-2 px-3 m-auto"
-              />
-            </div>
-            <p className="text-center font-semibold ">
-              Samanya Vigyan for <br /> Bhartiya Railways RRB <br /> Pariksha -
-              JE/NTPC/ALP/
-              <br /> Group D - 2nd Edition{" "}
-            </p>
-            <button className="text-lg font-bold text-center bg-yellow-300 p-4 ml-12 rounded-md ">
-              ADD TO CART
-            </button>
-            <br />
-            <button className="text-lg font-bold text-center p-4 ml-12 rounded-md border border-gray-300">
-              QUICK VIEW
-            </button>
           </div>
         </div>
       </div>

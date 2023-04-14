@@ -57,8 +57,8 @@ export default function Signin() {
   }
 
   return (
-    <>
-      <div className="flex flex-col justify-center items-center space-y-9">
+    <div className="xm:my-[50px]">
+      <div className="flex flex-col justify-center items-center space-y-9 ">
         <h1 className="text-3xl font-semibold  mt-6">Customer Login</h1>
 
         <button
@@ -70,12 +70,14 @@ export default function Signin() {
         </button>
       </div>
 
-      <div className="flex justify-around my-20">
+      <div className="md:flex md:justify-around md:my-20 md:mx-0    ">
         <form
           onSubmit={onSubmit}
-          className=" border-2 border-gray-200 shadow-md w-[30%] p-2"
+          className=" border-2 border-gray-200 shadow-md md:w-[30%] sm:w-[60%] md:p-8 p-4 m-auto sm:mt-[40px] "
         >
-          <h1 className="font-semibold text-3xl ">Registerd Customers</h1>
+          <h1 className="font-semibold md:text-3xl text-md">
+            Registerd Customers
+          </h1>
           <p className="text-gray-400 text-sm py-2">
             If You Have An Account, Signin With Email Address
           </p>
@@ -139,21 +141,24 @@ export default function Signin() {
           </p>
         </form>
 
-        <div className="w-[40%]">
-          <h1 className="font-semibold text-2xl">New Customers</h1>
+        <div className="w-[40%] m-auto md:mt-0 sm:mt-4  p-4">
+          <h1 className="font-semibold md:text-2xl text-md">New Customers</h1>
           <p className="text-gray-400 text-sm py-2">
-            Creating an account haws many benifits:check out faster,keep more
+            Creating an account has many benifits:check out faster,keep more
             <br />
             than one address , track orders and more
           </p>
 
           <div className="w-full my-3">
-            <button className="bg-yellow-300 w-[40%] py-3 font-semibold rounded">
-              <Link to={"/Signup"}> CREATE AN ACCOUNT</Link>
+            <button className="bg-yellow-300 md:w-[40%] sm:w-full py-3 font-semibold rounded ">
+              <Link to={"/Signup"} className="md:text-inherit sm:text-sm">
+                {" "}
+                CREATE AN ACCOUNT
+              </Link>
             </button>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

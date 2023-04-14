@@ -6,11 +6,11 @@ export default function Magazines() {
       style={{ backgroundImage: 'url("mag1.jpg")' }}
       className="bg-cover py-20"
     >
-      <p className="text-center font-serif text-5xl font-bold   bg-cover text-red-500  ">
+      <p className="text-center font-serif lg:text-5xl text-lg font-bold   bg-cover text-red-500  ">
         OUR MONTHLY MAGAZINES
       </p>
 
-      <div className="  flex justify-center items-center gap-6 my-10">
+      <div className="  flex flex-wrap justify-center items-center my-10 gap-4">
         <div className="w-[200px] bg-gray-600 rounded-md py-4 ">
           <p className="text-center text-lg font-serif font-semibold">
             Anurag reports

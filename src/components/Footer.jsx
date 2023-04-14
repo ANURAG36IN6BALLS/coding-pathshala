@@ -11,19 +11,21 @@ import logo from "./assets/regular_images/logo.png";
 
 export default function Footer() {
   return (
-    <>
-      <div className="flex bg-gray-900 text-white justify-around py-20">
+    <div className="w-full sm:w-full text-sm xm:text-[10px] overflow-hidden  ">
+      <div className="md:flex  bg-gray-900 text-white md:justify-around sm:px-20 xm:px-20 py-20">
         <div>
           <img
             src={logo}
             alt="logo"
-            className="h-[100px] w-[200px] cursor-pointer "
+            className="h-[100px] w-[200px] cursor-pointer hidden lg:block "
           />
         </div>
 
         <div>
-          <h1 className="mb-5 font-semibold">Support</h1>
-          <div className="text-[17px] space-y-3">
+          <h1 className="mb-5 font-semibold text-blue-500 pt-[20px]">
+            Support
+          </h1>
+          <div className="text-[17px] space-y-3 text-sm xm:text-[10px] ">
             <p>
               <Link to={"/Aboutus"}>About us</Link>
             </p>
@@ -49,8 +51,10 @@ export default function Footer() {
         </div>
 
         <div>
-          <h1 className="mb-5 font-semibold">My Account</h1>
-          <div className="text-[17px] space-y-3">
+          <h1 className="mb-5 font-semibold text-blue-500 pt-[20px]">
+            My Account
+          </h1>
+          <div className="text-[17px] space-y-3 text-sm xm:text-[10px] ">
             <p>
               <Link to={"/MyAccount"}>Sign In</Link>
             </p>
@@ -69,8 +73,10 @@ export default function Footer() {
           </div>
         </div>
         <div>
-          <h1 className="mb-5 font-semibold">Information</h1>
-          <div className="text-[17px] space-y-3">
+          <h1 className="mb-5 font-semibold text-blue-500 pt-[20px]">
+            Information
+          </h1>
+          <div className="text-[17px] space-y-3 text-sm xm:text-[10px] ">
             <p>
               <Link to={"/Privacypolicy"}>Privacy Policy</Link>
             </p>
@@ -85,7 +91,6 @@ export default function Footer() {
               Corporate Office :-
             </h1>
             <p>
-              {" "}
               45,2nd floor , Maharishi Dayanand Marg, Corncer Market, Malviya{" "}
               <br />
               Nagar, New Delhi
@@ -95,13 +100,12 @@ export default function Footer() {
             <h1 className="mt-8 text-blue-400 font-semibold">
               Registerd office:-
             </h1>
-            <p>
-              {" "}
+            <p className="overflow-hidden">
               B-32, BASEMENT , SHIVALIK, MALVIYA NAGAR,NEW DELHI,DELHI, 110017
             </p>
           </div>
 
-          <div className="flex space-x-8 mt-8  ">
+          {/* <div className="flex space-x-8 mt-8  ">
             <a href="http://www.facebook.com">
               <FaFacebookF className="bg-blue-400 h-8 w-8 p-1" />
             </a>
@@ -109,9 +113,9 @@ export default function Footer() {
             <FaInstagram className="bg-pink-400 h-8 w-8 p-1" />
             <FaYoutubeSquare className="bg-red-600 h-8 w-8 p-1" />
             <FaPinterest className="bg-orange-400 h-8 w-8 p-1" />
-          </div>
+          </div> */}
         </div>
       </div>
-    </>
+    </div>
   );
 }

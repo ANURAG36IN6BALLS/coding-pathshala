@@ -40,16 +40,16 @@ export default function Profile() {
   }
   return (
     <>
-      <div className="max-w-6xl mx-auto flex flex-col items-center sm:w-full">
+      <div className="max-w-6xl mx-auto flex flex-col items-center xm:w-[80%]">
         <h1 className="font-bold text-[1.5rem] mt-6">My Profile</h1>
-        <div className="text-[1.2rem]">
+        <div className=" ">
           <form>
             <input
               type="text"
               value={name}
               onChange={onChange}
               disabled={!edit}
-              className={`w-full border-[2px] border-gray-600 mb-6 mt-6  h-9 text-center hover:border-black transition duration-300 ease-in-out cursor-pointer  ${
+              className={`w-full border-[2px] border-gray-600 mb-6 mt-6 xm:text-xs md:text-lg  px-2 h-9 text-center hover:border-black transition duration-300 ease-in-out cursor-pointer  ${
                 edit && "bg-red-200 focus:bg-red-400"
               }`}
             />
@@ -57,7 +57,7 @@ export default function Profile() {
               type="email"
               value={email}
               disabled
-              className="w-full border-[2px] border-gray-600 mb-6 h-9 text-center hover:border-black transition duration-300 ease-in-out cursor-pointer rounded"
+              className="w-full border-[2px] border-gray-600 mb-6 h-9 text-center xm:text-xs md:text-lg px-2   hover:border-black transition duration-300 ease-in-out cursor-pointer rounded"
             />
           </form>
           <div className="flex justify-between mb-4   ">

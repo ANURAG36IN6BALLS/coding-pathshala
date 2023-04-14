@@ -32,8 +32,8 @@ export default function Home() {
   return (
     <>
       <div className="relative w-[80%] m-auto">
-        <div className="flex  m-auto">
-          <div className="w-[80%]  relative ">
+        <div className="md:flex  m-auto">
+          <div className="md:block hidden md:w-[80%] w-full relative ">
             <div
               style={{ backgroundImage: `url(${slides[Currentstate].url})` }}
               className="w-full h-[400px] bg-center bg-cover duration-1000"
@@ -46,20 +46,21 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-gray-400 w-[30%]   overflow-scroll h-[400px] relative">
+          <div className="bg-gray-400 md:w-[30%] h-[400px] text-xs  border-2 border-gray-400    overflow-scroll md:h-[400px] relative">
             <div className=" flex justify-evenly items-center  py-2 sticky top-0 bg-gray-300  ">
-              <div className="flex items-center space-x-2">
-                <GiHamburgerMenu></GiHamburgerMenu>
-                <p>Categories</p>
+              <div className="flex  items-center space-x-2 ">
+                <GiHamburgerMenu className="lg:hidden block"></GiHamburgerMenu>
+                <p className="lg:block hidden">Categories</p>
+                <p className="lg:hidden block"> All Categories</p>
               </div>
-              <button className="font-semibold bg-white px-1 text-sm rounded-md">
+              <button className="lg:block hidden font-semibold bg-white px-1 text-sm rounded-md">
                 English
               </button>
-              <button className="font-semibold bg-white px-1 text-sm rounded-md ">
+              <button className="lg:block hidden font-semibold bg-white px-1 text-sm rounded-md ">
                 Hindi
               </button>
             </div>
-            <ul className="bg-white text-sm px-2 space-y-1 py-1">
+            <ul className="bg-white lg:text-sm  text-[10px] px-2 space-y-1 py-1">
               <li>AIR FORCE</li>
               <li>ARITHMETIC/MATHS</li>
               <li>B.ED./TEACHERS APTITUDE</li>
@@ -115,16 +116,16 @@ export default function Home() {
           </div>
         </div>
 
-        <div className=" bg-red-500 rounded-t-lg w-[247px] text-center text-white font-semibold  mt-5">
+        <div className=" bg-red-500 rounded-t-lg w-[20.37%] text-center text-white font-semibold  mt-5">
           New Arrivals
         </div>
         <div className="relative h-[400px] flex overflow-x-scroll space-x-4 ">
           <img
             src="newarrivals.jpg"
             alt="image"
-            className="absolute top-0 z-50"
+            className="absolute top-0 z-50 w-[20.37%] h-[40.37%]"
           />
-          <div className="w-[200px] h-[250px] text-center space-y-1 p-1 ">
+          <div className="w-[20.37%] h-[250px] text-center space-y-1 p-1 ">
             <img src="14237.jpg" alt="" className="h-[230px] w-[200px]" />
             <p className="text-xs">
               यू.जी.सी. नेट/जे.आर.एफ./ सेट शिक्षाशास्त्र...
@@ -191,7 +192,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className=" bg-red-500 rounded-t-lg w-[247px] text-center text-white font-semibold  mt-5">
+        <div className=" bg-red-500 rounded-t-lg w-[20.37%] text-center text-white font-semibold  mt-5">
           New Arrivals
         </div>
         <div className="relative h-[400px] flex overflow-x-scroll space-x-4 ">
@@ -266,7 +267,7 @@ export default function Home() {
             <strong className="text-sm">PRICE : RS.224</strong>
           </div>
         </div>
-        <div className=" bg-red-500 rounded-t-lg w-[247px] text-center text-white font-semibold  mt-5">
+        <div className=" bg-red-500 rounded-t-lg w-[20.37%] text-center text-white font-semibold  mt-5">
           New Arrivals
         </div>
         <div className="relative h-[400px] flex overflow-x-scroll space-x-4 ">
@@ -349,7 +350,7 @@ export default function Home() {
         </h1>
         <hr className="w-[20%]"></hr>
       </div>
-
+      {/* 
       <div className="w-[80%] m-auto flex space-x-3 mb-[100px] ">
         <img src="patwar.jpg" alt="" className="h-[500px] w-[300px]" />
         <img src="currentaffairs.jpg" alt="" className="h-[500px] w-[300px]" />
@@ -363,17 +364,17 @@ export default function Home() {
           </div>
           <img src="statebank.jpg" alt="" className="h-[125px] w-[600px]" />
         </div>
-      </div>
-      <Link to="/Catalogue">
-        <p className=" absolute top-[80%] left-0 bg-orange-500 text-white text-bold px-2 rotate-90 rounded-md cursor-pointer z-50">
+      </div> */}
+      {/* <Link to="/Catalogue">
+        <p className=" absolute top-[80%] left-0 bg-orange-500 sm:hidden md:block text-white text-bold px-2 rotate-90 rounded-md cursor-pointer z-50">
           CATALOGUE
         </p>
       </Link>
       <Link to="/Contactus">
-        <p className=" absolute top-[80%] right-0 bg-orange-500 text-white text-bold px-2 rotate-90 rounded-md cursor-pointer z-50">
+        <p className=" absolute top-[80%] right-0 bg-orange-500 sm:hidden md:block text-white text-bold px-2 rotate-90 rounded-md cursor-pointer z-50">
           Feedback
         </p>
-      </Link>
+      </Link> */}
       {/* <Link to="https://wa.me/qr/M55JKRWPPDOBE1">
         <p className=" absolute top-[90%] right-0  bg-orange-500 text-white text-bold px-2 rotate-90 rounded-md cursor-pointer z-50">
           Customer care

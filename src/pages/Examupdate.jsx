@@ -6,14 +6,14 @@ export default function Examupdate() {
       <div>
         <img src="Exam-Update.jpg" alt="" className="w-[80%] m-auto" />
         <table className="table-fixed w-[80%] m-auto ">
-          <thead className="bg-yellow-400 border-2 border-black">
+          <the className="bg-yellow-400 border-2 border-black">
             <tr>
               <th>category</th>
               <th>Exams</th>
               <th>Notification</th>
               <th>Exam Date</th>
             </tr>
-          </thead>
+          </the>
           <tbody>
             <tr>
               <th className="row-span-full"> civil SERVICES</th>

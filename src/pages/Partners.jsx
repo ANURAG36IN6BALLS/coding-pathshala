@@ -11,7 +11,7 @@ export default function Partners() {
           </Link>
           <span>&#62;</span>
 
-          <span className="px-5">Connect Us</span>
+          <span className="px-5">Partners</span>
         </div>
         <div>
           <img src="partners.png" alt="" className="m-auto" />
@@ -50,7 +50,7 @@ export default function Partners() {
             YOUR VISION OUR MISSION
           </p>
           <p>Quality Books For Competitive Exams</p>
-          <div className="flex w-[80%] justify-center m-auto space-x-4">
+          <div className="flex flex-wrap w-[80%] justify-center m-auto space-x-4">
             <p>FOUNDATION</p>
             <p className="bg-red-500 w-[2px]" />
             <p>JEE</p>
@@ -67,7 +67,9 @@ export default function Partners() {
           </div>
           <div className="flex  items-center">
             <div className="w-[50%]">
-              <p className="text-5xl font-bold text-red-400">NORTH INDIA</p>
+              <p className="text-md md:text-5xl font-bold text-red-400">
+                NORTH INDIA
+              </p>
               <div className="flex flex-wrap justify-center">
                 <p className="m-2">
                   <span className="font-bold text-black">
@@ -136,7 +138,9 @@ export default function Partners() {
               <img src="east-india.png" alt="" />
             </div>
             <div className="w-[50%]">
-              <p className="text-5xl font-bold text-blue-400">EAST INDIA</p>
+              <p className="text-md md:text-5xl font-bold text-blue-400">
+                EAST INDIA
+              </p>
               <div className="flex flex-wrap justify-center">
                 <p className="m-2">
                   <span className="font-bold text-black">
@@ -199,7 +203,9 @@ export default function Partners() {
           </div>
           <div className="flex  items-center ">
             <div className="w-[50%]">
-              <p className="text-5xl font-bold text-green-400">WEST INDIA</p>
+              <p className="text-md md:text-5xl font-bold text-green-400">
+                WEST INDIA
+              </p>
               <div className="flex flex-wrap justify-center">
                 <p className="m-2">
                   <span className="font-bold text-black">
@@ -268,7 +274,9 @@ export default function Partners() {
               <img src="central-india.png" alt="" />
             </div>
             <div className="w-[50%]">
-              <p className="text-5xl font-bold text-red-400">CENTRAL INDIA</p>
+              <p className="text-md md:text-5xl font-bold text-red-400">
+                CENTRAL INDIA
+              </p>
               <div className="flex flex-wrap justify-center">
                 <p className="m-2">
                   <span className="font-bold text-black">
@@ -331,7 +339,9 @@ export default function Partners() {
           </div>
           <div className="flex items-center ">
             <div className="w-[50%]">
-              <p className="text-5xl font-bold text-yellow-400">SOUTH INDIA</p>
+              <p className="text-md md:text-5xl font-bold text-yellow-400">
+                SOUTH INDIA
+              </p>
               <div className="flex flex-wrap justify-center">
                 <p className="m-2">
                   <span className="font-bold text-black">

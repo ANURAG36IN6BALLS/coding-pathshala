@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Coaching() {
   return (
     <>
-      <div className="my-5">
+      <div className="my-5 px-3">
         <div>
           <Link to={"/"} className="hover:underline px-5  font-bold">
             Home
@@ -13,7 +13,7 @@ export default function Coaching() {
 
           <span className="px-5">Grow With us</span>
         </div>
-        <div className="relative  h-[500px] my-5">
+        <div className="md:block hidden relative  h-[500px] my-5">
           <img src="grow-top-banner.png" alt="" className="h-full" />
           <div className="absolute left-[50%] top-[10%] p-2">
             <p className="text-4xl font-mono font-extrabold">
@@ -58,13 +58,13 @@ export default function Coaching() {
           </div>
           <div className="w-[40%] font-mono">
             <p>
-              <span className="text-3xl font-bold">We offer</span>
+              <span className="text-md md:text-3xl font-bold">We offer</span>
               <br />
-              <span className="text-3xl font-bold text-red-500  ">
+              <span className="text-md md:text-3xl font-bold text-red-500  ">
                 Customised Study Package
               </span>
               <br />
-              <span className="text-2xl font-semibold ">
+              <span className="text-md md:text-2xl font-semibold ">
                 for your Institute
               </span>
             </p>

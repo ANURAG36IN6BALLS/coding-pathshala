@@ -37,17 +37,17 @@ export default function Authors() {
         </p>
         <div className="bg-[#efefd0] flex w-[90%] m-auto justify-center space-x-4 my-8 py-5">
           <div className="w-[45%] p-3">
-            <p className="text-lg font-serif ">First Name </p>
+            <p className=" text-sm md:text-lg font-serif ">First Name </p>
             <input
               type="text"
               className=" w-full  my-2 p-2 outline-none text-lg shadow-md shadow-gray-300"
             />
-            <p className="text-lg font-serif ">Email Id </p>
+            <p className=" text-sm md:text-lg font-serif ">Email Id </p>
             <input
               type="email"
               className=" w-full  my-2 p-2 outline-none text-lg shadow-md shadow-gray-300"
             />
-            <p className="text-lg font-serif ">Mobile No. </p>
+            <p className=" text-sm md:text-lg font-serif ">Mobile No. </p>
             <input
               type="tel"
               className=" w-full  my-2 p-2 outline-none text-lg shadow-md shadow-gray-300"
@@ -57,7 +57,7 @@ export default function Authors() {
             </button>
           </div>
           <div className="w-[45%] p-3 space-y-2">
-            <p className="text-lg font-serif ">Your Message </p>
+            <p className=" text-sm md:text-lg font-serif ">Your Message </p>
             <textarea
               name=""
               id=""
