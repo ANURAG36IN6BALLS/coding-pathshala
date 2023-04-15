@@ -11,7 +11,9 @@ export default function Requestforspecimen() {
           </Link>
           <span>&#62;</span>
 
-          <span className="px-5">Request for Specimen</span>
+          <span className="px-5 xm:text-sm lg:text-md">
+            Request for Specimen
+          </span>
         </div>
 
         <h1 className="text-center text-4xl font-semibold">
@@ -19,7 +21,7 @@ export default function Requestforspecimen() {
         </h1>
 
         <div className="  lg:flex  justify-around  my-10">
-          <div className="space-y-2 text-lg w-[40%]">
+          <div className="space-y-2 text-lg  xm:w-full lg:w-[40%]">
             <p className="p-2">First Name :</p>
             <input
               type="text"
@@ -56,7 +58,7 @@ export default function Requestforspecimen() {
               className="border-[2px] border-gray-300 p-2 rounded w-full"
             />
           </div>
-          <div className="  space-y-2 text-lg w-[40%]  ">
+          <div className="  space-y-2 text-lg  xm:w-full lg:w-[40%]  ">
             <p className="p-2">Last Name :</p>
             <input
               type="text"
@@ -86,13 +88,13 @@ export default function Requestforspecimen() {
           </div>
         </div>
 
-        <div className="m-20">
+        <div className="xm:my-20 md:m-0 md:text-center ">
           <p className="text-2xl font-mono font-semibold text-[#1c3755]">
             Prodution Information
           </p>
 
           <div className="  lg:flex  justify-around  my-10">
-            <div className="  space-y-2 text-lg w-[40%]  ">
+            <div className="  space-y-2 text-lg  xm:w-full lg:w-[40%]  ">
               <p className="p-2 font-serif"> Name of Books :</p>
               <input
                 type="text"
@@ -104,7 +106,7 @@ export default function Requestforspecimen() {
                 className="border-[2px] border-gray-300 p-2 w-full rounded"
               />
             </div>
-            <div className="  space-y-2 text-lg w-[40%]  ">
+            <div className="  space-y-2 text-lg  xm:w-full lg:w-[40%]  ">
               <p className="p-2 font-serif"> ISBN :</p>
               <input
                 type="text"

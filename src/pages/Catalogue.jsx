@@ -4,7 +4,7 @@ import { FcDownload } from "react-icons/fc";
 
 export default function Catalogue() {
   return (
-    <>
+    <div className="mx-2">
       <div className="space-y-10 mb-4">
         <div className="ml-20 mt-14 text-md">
           <Link to={"/home"} className="hover:underline text-gray-600">
@@ -22,18 +22,18 @@ export default function Catalogue() {
           Get Connected And Stay Connected
         </p>
         <hr className="w-[30%] m-auto mt-10" />
-        <p className="text-center text-gray-400 text-lg font-mono font-semibold my-5">
+        <p className="text-center text-gray-400 xm:text-md lg:text-lg font-mono font-semibold my-5">
           Dear visitor your requirments/suggetions are important to us. <br />{" "}
           Please feel free to call us on below number and ask for the respective
           extentions
         </p>
-        <p className="text-center text-[#af7352] font-bold text-xl m-auto my-7 w-[10%]">
+        <p className="text-center text-[#af7352] font-bold text-xl  my-7 ">
           05624308606
         </p>
 
-        <div className="flex justify-around">
+        <div className="lg:flex justify-around">
           <div
-            className="text-center border-2 border-gray-200 w-[20%] py-10 bg-[#f2e9e4] hover:shadow-lg hover:shadow-
+            className="text-center border-2 border-gray-200 w-[80%] m-auto lg:w-[20%] py-10 bg-[#f2e9e4] hover:shadow-lg hover:shadow-
             [#83492a] rounded"
           >
             <img src="6-12.png" className="m-auto" />
@@ -46,7 +46,7 @@ export default function Catalogue() {
           </div>
 
           <div
-            className="text-center border-2 border-gray-200 w-[20%] py-10 bg-[#f2e9e4] hover:shadow-lg hover:shadow-
+            className="text-center border-2 border-gray-200 w-[80%] m-auto lg:w-[20%] py-10 bg-[#f2e9e4] hover:shadow-lg hover:shadow-
             [#83492a] rounded"
           >
             <div>
@@ -63,7 +63,7 @@ export default function Catalogue() {
           </div>
 
           <div
-            className="text-center border-2 border-gray-200 w-[20%] py-10 bg-[#f2e9e4] hover:shadow-lg hover:shadow-
+            className="text-center border-2 border-gray-200 w-[80%] m-auto lg:w-[20%] py-10 bg-[#f2e9e4] hover:shadow-lg hover:shadow-
             [#83492a] rounded"
           >
             <img src="admission.png" className="m-auto" />
@@ -78,7 +78,7 @@ export default function Catalogue() {
           </div>
 
           <div
-            className="text-center border-2 border-gray-200 w-[20%] py-10 bg-[#f2e9e4] hover:shadow-lg hover:shadow-
+            className="text-center border-2 border-gray-200 w-[80%] m-auto lg:w-[20%] py-10 bg-[#f2e9e4] hover:shadow-lg hover:shadow-
             [#83492a] rounded"
           >
             <img src="teaching.png" className="m-auto" />
@@ -91,9 +91,9 @@ export default function Catalogue() {
           </div>
         </div>
 
-        <div className="flex justify-around">
+        <div className="lg:flex justify-around">
           <div
-            className="text-center border-2 border-gray-200 w-[20%] py-10 bg-[#f2e9e4] hover:shadow-lg hover:shadow-
+            className="text-center border-2 border-gray-200 w-[80%] m-auto lg:w-[20%] py-10 bg-[#f2e9e4] hover:shadow-lg hover:shadow-
             [#83492a] rounded"
           >
             <img src="engineering.png" className="m-auto" />
@@ -106,7 +106,7 @@ export default function Catalogue() {
           </div>
 
           <div
-            className="text-center border-2 border-gray-200 w-[20%] py-10 bg-[#f2e9e4] hover:shadow-lg hover:shadow-
+            className="text-center border-2 border-gray-200 w-[80%] m-auto lg:w-[20%] py-10 bg-[#f2e9e4] hover:shadow-lg hover:shadow-
             [#83492a] rounded"
           >
             <div>
@@ -121,7 +121,7 @@ export default function Catalogue() {
           </div>
 
           <div
-            className="text-center border-2 border-gray-200 w-[20%] py-10 bg-[#f2e9e4] hover:shadow-lg hover:shadow-
+            className="text-center border-2 border-gray-200 w-[80%] m-auto lg:w-[20%] py-10 bg-[#f2e9e4] hover:shadow-lg hover:shadow-
             [#83492a] rounded"
           >
             <img src="banking.png" className="m-auto" />
@@ -134,7 +134,7 @@ export default function Catalogue() {
           </div>
 
           <div
-            className="text-center border-2 border-gray-200 w-[20%] py-10 bg-[#f2e9e4] hover:shadow-lg hover:shadow-
+            className="text-center border-2 border-gray-200 w-[80%] m-auto lg:w-[20%] py-10 bg-[#f2e9e4] hover:shadow-lg hover:shadow-
             [#83492a] rounded"
           >
             <img src="ssc_1.png" className="m-auto" />
@@ -147,9 +147,9 @@ export default function Catalogue() {
           </div>
         </div>
 
-        <div className="flex justify-around">
+        <div className="lg:flex justify-around">
           <div
-            className="text-center border-2 border-gray-200 w-[20%] py-10 bg-[#f2e9e4] hover:shadow-lg hover:shadow-
+            className="text-center border-2 border-gray-200 w-[80%] m-auto lg:w-[20%] py-10 bg-[#f2e9e4] hover:shadow-lg hover:shadow-
             [#83492a] rounded"
           >
             <img src="engineering.png" className="m-auto" />
@@ -162,7 +162,7 @@ export default function Catalogue() {
           </div>
 
           <div
-            className="text-center border-2 border-gray-200 w-[20%] py-10 bg-[#f2e9e4] hover:shadow-lg hover:shadow-
+            className="text-center border-2 border-gray-200 w-[80%] m-auto lg:w-[20%] py-10 bg-[#f2e9e4] hover:shadow-lg hover:shadow-
             [#83492a] rounded"
           >
             <div>
@@ -177,7 +177,7 @@ export default function Catalogue() {
           </div>
 
           <div
-            className="text-center border-2 border-gray-200 w-[20%] py-10 bg-[#f2e9e4] hover:shadow-lg hover:shadow-
+            className="text-center border-2 border-gray-200 w-[80%] m-auto lg:w-[20%] py-10 bg-[#f2e9e4] hover:shadow-lg hover:shadow-
             [#83492a] rounded"
           >
             <img src="teaching.png" className="m-auto" />
@@ -190,7 +190,7 @@ export default function Catalogue() {
           </div>
 
           <div
-            className="text-center border-2 border-gray-200 w-[20%] py-10 bg-[#f2e9e4] hover:shadow-lg hover:shadow-
+            className="text-center border-2 border-gray-200 w-[80%] m-auto lg:w-[20%] py-10 bg-[#f2e9e4] hover:shadow-lg hover:shadow-
             [#83492a] rounded"
           >
             <img src="upsc.png" className="m-auto" />
@@ -203,6 +203,6 @@ export default function Catalogue() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

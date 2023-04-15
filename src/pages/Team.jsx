@@ -15,7 +15,7 @@ export default function Team() {
         </div>
 
         <img src="team.png" alt="team" className="m-auto my-10" />
-        <h1 className=" text-5xl text-center font-bold my-10  ">
+        <h1 className=" xm:text-md md:text-lg lg:text-3xl text-center font-bold my-10  ">
           Coding Pathshala
         </h1>
 
@@ -34,32 +34,16 @@ export default function Team() {
           <p className="text-2xl font-semibold text-gray-600 text-center">
             Anurag HOD
           </p>
-          <div className="flex space-x-4 justify-center items-center">
+          <div className="lg:flex lg:space-x-4  xm:space-y-4 justify-center items-center">
             <img
               src="anurag.jpeg"
               alt=""
-              className="w-[300px] h-[300px] cursor-zoom-in rounded-[10%]"
+              className="w-[300px] xm:m-auto lg:m-0 h-[300px] cursor-zoom-in rounded-[50%]"
             />
 
-            <p className="text-sm">
-              An alumnus of G.B. Pant University (B.Tech) and the Management
-              Development Institute, Gurgaon (MBA), Mr. Anurag Chaturvedi
-              enthusiastically leads Disha Publication as its Director. Apart
-              from being the leading Business Strategist in the company, he
-              oversees Disha’s Digital division, among other things. With over
-              15 years of experience as a Study Skill and Habit Coach for
-              students, he firmly believes that any child can be a topper. He
-              has interviewed hundreds of toppers who have cracked different
-              competitive exams which led him to deeply understand the topper
-              mindset. Through his books, podcasts and online programmes, he
-              endeavours to impart the right learning strategies, techniques and
-              mindset to students to convert their potential into performance.
-              He has authored several bestselling books including Toppers’ Study
-              Hacks, The Secret Code of UPSC Toppers, Success Blueprint for
-              Competitive Exams, How to Raise a Topper, and Bhagvad Gita - The
-              Story Way. Recently, he released his first novel, Stop Being a
-              Maggu which innovatively combines features of fiction and
-              mentorship.
+            <p className="text-sm lg">
+              I am student of F.E.T Agra college pursuing B.Tech and soon
+              completed in 2023
             </p>
           </div>
         </div>

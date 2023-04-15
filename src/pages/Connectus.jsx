@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Connectus() {
   return (
     <>
-      <div className="bg-[#ede0d4] pb-20 py-10 py ">
+      <div className="bg-[#ede0d4] pb-20 py-10  ">
         <div>
           <Link to={"/"} className="hover:underline px-5 text-white font-bold">
             Home
@@ -27,9 +27,9 @@ export default function Connectus() {
         <p className="text-center font-bold text-blue-900 ">05624305606</p>
 
         <div>
-          <div className="flex justify-evenly py-8">
+          <div className=" lg:flex justify-evenly py-8 xm:space-y-3 lg:space-y-0">
             <div
-              className="flex flex-col items-center justify-center bg-[#ddbea9] w-[30%]  rounded
+              className="flex flex-col items-center justify-center bg-[#ddbea9] xm:w-[80%] xm:m-auto lg:w-[30%]  rounded
                       hover:shadow-2xl shadow-md py-10 space-y-4 font-semibold text-white"
             >
               <img src="bulkbooks.png" alt="bulk books" />
@@ -40,7 +40,7 @@ export default function Connectus() {
               <p className="my-2 text-[5px]">Email id: sales3@aiets.co.in</p>
             </div>
             <div
-              className="flex flex-col items-center justify-center bg-[#ddbea9] w-[30%]  rounded
+              className="flex flex-col items-center justify-center bg-[#ddbea9]  xm:w-[80%] xm:m-auto lg:w-[30%]  rounded
                      hover:shadow-2xl shadow-md py-10 space-y-4 font-semibold text-white "
             >
               <img src="studymaterial.png" alt="study material" />
@@ -52,7 +52,7 @@ export default function Connectus() {
               <p className="my-2 text-[5px]">Email id: teamlead2@aiets.co.in</p>
             </div>
             <div
-              className="flex flex-col items-center justify-center bg-[#ddbea9] w-[30%]  rounded
+              className="flex flex-col items-center justify-center bg-[#ddbea9]  xm:w-[80%] xm:m-auto lg:w-[30%]  rounded
                       hover:shadow-2xl shadow-md py-10 space-y-4 font-semibold text-white"
             >
               <img src="suggestions.png" alt="suggestions" />
@@ -65,9 +65,9 @@ export default function Connectus() {
               </p>
             </div>
           </div>
-          <div className="flex justify-evenly py-8">
+          <div className="lg:flex justify-evenly py-8 xm:space-y-3 lg:space-y-0">
             <div
-              className="flex flex-col items-center justify-center bg-[#ddbea9] w-[30%]  rounded
+              className="flex flex-col items-center justify-center bg-[#ddbea9]  xm:w-[80%] xm:m-auto lg:w-[30%]  rounded
                       hover:shadow-2xl shadow-md py-10 space-y-4 font-semibold text-white"
             >
               <img src="bulkbooks.png" alt="bulk books" />
@@ -78,7 +78,7 @@ export default function Connectus() {
               <p className="my-2 text-[5px]">Email id: sales3@aiets.co.in</p>
             </div>
             <div
-              className="flex flex-col items-center justify-center bg-[#ddbea9] w-[30%]  rounded
+              className="flex flex-col items-center justify-center bg-[#ddbea9]  xm:w-[80%] xm:m-auto lg:w-[30%]  rounded
                       hover:shadow-2xl shadow-md py-10 space-y-4 font-semibold text-white"
             >
               <img src="studymaterial.png" alt="study material" />
@@ -90,7 +90,7 @@ export default function Connectus() {
               <p className="my-2 text-[5px]">Email id: teamlead2@aiets.co.in</p>
             </div>
             <div
-              className="flex flex-col items-center justify-center bg-[#ddbea9] w-[30%]  rounded
+              className="flex flex-col items-center justify-center bg-[#ddbea9]  xm:w-[80%] xm:m-auto lg:w-[30%]  rounded
                       hover:shadow-2xl shadow-md py-10 space-y-4 font-semibold text-white"
             >
               <img src="suggestions.png" alt="suggestions" />
@@ -103,9 +103,9 @@ export default function Connectus() {
               </p>
             </div>
           </div>
-          <div className="flex justify-evenly py-8">
+          <div className="lg:flex justify-evenly py-8 xm:space-y-3 lg:space-y-0">
             <div
-              className="flex flex-col items-center justify-center bg-[#ddbea9] w-[30%]  rounded
+              className="flex flex-col items-center justify-center bg-[#ddbea9]  xm:w-[80%] xm:m-auto lg:w-[30%]  rounded
                       hover:shadow-2xl shadow-md py-10 space-y-4 font-semibold text-white"
             >
               <img src="workwithus.png" alt="workwithus" />
@@ -116,7 +116,7 @@ export default function Connectus() {
               <p className="my-2 text-[5px]">Email id: hr@aiets.co.in</p>
             </div>
             <div
-              className="flex flex-col items-center justify-center bg-[#ddbea9] w-[30%]  rounded 
+              className="flex flex-col items-center justify-center bg-[#ddbea9]  xm:w-[80%] xm:m-auto lg:w-[30%]  rounded 
                     hover:shadow-2xl shadow-md py-10 space-y-4 font-semibold text-white"
             >
               <img src="findout.png" alt="findout" />
@@ -130,7 +130,7 @@ export default function Connectus() {
               </p>
             </div>
             <div
-              className="flex flex-col items-center justify-center bg-[#ddbea9] w-[30%]  rounded
+              className="flex flex-col items-center justify-center bg-[#ddbea9]  xm:w-[80%] xm:m-auto lg:w-[30%]  rounded
                       hover:shadow-2xl shadow-md py-10 space-y-4 font-semibold text-white"
             >
               <img src="advertise.png" alt="advertise" />
